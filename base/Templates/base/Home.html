@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% block content%}
+
+<h1> Home <h1> 
+  <div>
+      <div>
+        {% for post in posts %}
+
+            <div>
+                  <h3>
+                        {{post.id}} -- {{post.name}}
+                  </h3>
+
+            </div>
+
+        {% endfor %}
+                   
+      </div>
+  </div>
+
+
+{%endblock content%}
